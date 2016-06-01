@@ -1,0 +1,8 @@
+.btn {
+	border: 2px solid $color--white;
+	color: $color--white;
+	font-size: 15px;
+	background: transparent;
+	padding: em(15px, 15px) em(30px, 15px);
+	cursor: pointer;
+}

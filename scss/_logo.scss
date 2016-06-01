@@ -1,0 +1,13 @@
+.logo {
+	width: 79px;
+	height: 27px;
+	display: block;
+	background-image: url('../img/logo.png');
+
+	&_big {
+		width: 175px;
+		height: 60px;
+		display: block;
+		background-image: url('../img/logo_big.png');
+	}
+}

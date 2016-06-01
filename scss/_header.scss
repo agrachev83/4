@@ -1,15 +1,49 @@
 .header {
 	width: 100%;
 	background-color: $color--dark-black;
+
+	&_commercial {
+			background: url(../img/commercial.jpg);
+		}
 	
 	&__container {
-		width: $size--container;
+		width: to-percent(1100px, 1400px);
 		display: table;
 		margin: 0 auto;
-		padding: em(22px);
+		padding: em(22px) 0;
+		color: #fff;
+
+		&_commercial {
+			padding: em(110px) 0 em(140px);
+		}
 	}
 
 	&__logo {
+		display: table-cell;
+		vertical-align: middle;
+	}
 
+	&__menu {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__commercial {
+		display: table-cell;
+		width: to-percent(700px);
+		padding-right: em(230px);
+
+		&-row {
+			margin-bottom: em(30px);
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__signup {
+		display: table-cell;
+		width: to-percent(400px);
+		vertical-align: bottom;
 	}
 }
