@@ -32,6 +32,16 @@
 		display: table-cell;
 		width: to-percent(700px);
 		padding-right: em(230px);
+		
+		@include respond-to(max-width, 1000px) {
+			padding-right: em(100px);
+		}
+
+		@include respond-to(max-width, 900px) {
+			display: block;
+			width: 100%;
+			margin-bottom: em(45px);
+		}
 
 		&-row {
 			margin-bottom: em(30px);
@@ -45,5 +55,10 @@
 		display: table-cell;
 		width: to-percent(400px);
 		vertical-align: bottom;
+		
+		@include respond-to(max-width, 900px) {
+			display: block;
+			width: 100%;
+		}
 	}
 }
