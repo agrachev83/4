@@ -6,3 +6,22 @@
 	padding: em(15px, 15px) em(30px, 15px);
 	cursor: pointer;
 }
+
+.social-btn {
+	height: 46px;
+	width: 60px;
+	background-image: url('../img/social-btn.png');
+	background-repeat: no-repeat;
+    background-position: 15px 0;
+    
+    &:hover {
+    	background-position: -77px 0;
+    }
+
+	&_twitter {
+		background-position: -77px 0;
+	}
+	&_google {
+		background-position: -180px 0;
+	}
+}
