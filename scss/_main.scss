@@ -1,0 +1,65 @@
+
+.main {
+	width: 100%;
+
+	background-image: url('../img/bg-image.jpg');
+	&__container {
+		position: relative;
+		width: to-percent(1100px, 1400px);
+		display: table;
+		margin: 0 auto;
+		padding-top: em(110px);
+		padding-bottom: em(140px);
+	}
+	&__info {
+
+		display: table-cell;
+		width: to-percent(700px);
+		vertical-align: bottom;
+		padding-right: em(230px);
+			&-row {
+				text-align: left;
+	 			margin-bottom: em(30px);
+	 			font-family: Raleway;
+					&:last-child {
+					margin-bottom: 0;
+					}
+			}
+
+		@include respond-to(max-width, 1000px) {
+			padding-right: em(100px);
+			}
+		@include respond-to(max-width, 900px) {
+			display: block;
+			width: 100%;
+			margin-bottom: em(45px);
+			}
+	}
+	&__signup {
+		width: to-percent(360px);
+		display: table-cell;
+		vertical-align: bottom;
+
+		@include respond-to(max-width, 900px) {
+			display: block;
+			width: 100%;
+			margin-bottom: em(45px);
+			}
+		}
+
+	
+}
+.logo-main {
+	background-image: url('../img/logo-main.png');
+	height: 60px;
+	width: 175px;
+	margin-bottom: em(35px);
+}
+
+
+
+
+
+
+
+

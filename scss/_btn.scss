@@ -1,0 +1,45 @@
+.btn {
+	border: 2px solid $color--white;
+	color: $color--white;
+	font-size: 15px;
+	background: transparent;
+	padding: em(15px, 15px) em(30px, 15px);
+	cursor: pointer;
+	outline: none;
+ } 
+ 
+ .btn-orange {
+ 	border: none;
+ 	border-radius: 3px;
+ 	background: $color--orange;
+ 	padding: em(15px) em(23px);
+ 	}
+
+
+.social-icons {
+	float: left;
+	height: 46px;
+	width: 60px;
+	background-image: url("../img/social-icons.png");
+	background-repeat: no-repeat;
+	background-position: 15px 0;
+	&_twitter {
+		background-position: -77px;
+	}
+	&_google {
+		background-position: -180px;
+	}
+	&_pinterest {
+		background-position: -265px;
+	}
+	&_insta {
+		background-position: -325px;
+	}
+	&_worm {
+		background-position: -400px;
+	}
+	&_wifi {
+		background-position: -440px;
+	}
+
+}

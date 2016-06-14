@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'OpenSans-semibold';
+  src: url('../font/OpenSans-semibold/OpenSans-semibold'); /* IE9 Compat Modes */
+  src: url('../font/OpenSans-semibold/OpenSans-semibold-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/OpenSans-semibold/OpenSans-semibold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/OpenSans-semibold/OpenSans-semibold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/OpenSans-semibold/OpenSans-semibold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'OpenSans-regular';
+  src: url('../font/OpenSans-regular/OpenSans-regular'); /* IE9 Compat Modes */
+  src: url('../font/OpenSans-regular/OpenSans-regular-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/OpenSans-regular/OpenSans-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/OpenSans-regular/OpenSans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../font/OpenSans-regular/OpenSans-regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+
+
+.text {
+	&_xx-large {
+		font-size: em($size--font-xx-large);
+	}
+	&_x-large {
+		font-size: em($size--font-x-large);
+	}
+	&_large {
+		font-size: em($size--font-large);
+	}
+	&_regular {
+		font-size: em($size--font-regular);
+	}
+	&_small {
+		font-size: em($size--font-small);
+	}
+
+	&_white {
+		color: $color--font-white;
+	}
+	&_gray {
+		color: $color--font-gray;
+	}
+	&_dark {
+		color: $color--font-dark;
+	}
+	&_orange {
+		color: $color--font-orange;
+	}
+	&_upper {
+		text-transform: uppercase;
+	}
+	&_bold {
+		font-weight: bold;
+	}
+	&_light {
+		font-weight: 300;
+	}
+}
+

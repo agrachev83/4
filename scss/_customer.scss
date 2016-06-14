@@ -1,0 +1,48 @@
+.customer {
+	width: 100%;
+	background-color: #fff;
+		&__container {
+			width: to-percent(1100px, 1400px);
+			margin: 0 auto;
+			padding-top: em(105px);
+			padding-bottom: em(100px);
+		}
+		&__header {
+			display: block;
+			width: 100%;
+			text-align: center;
+			 &-row {
+			 	margin-bottom: em(30px);
+			 		&:last-child {
+			 			margin-bottom: em(80px);
+			 		}
+			 }
+		}
+		&__block-feedback {
+
+		}
+}
+.feedback__column {
+	float: left;
+	width: to-percent(270px);
+	margin-right: em(120px);
+		&:last-child {
+			margin-right: 0;
+		}
+
+}
+.feedback__row-speach {
+	padding: em(23px) em(10px);
+	background-color: $color--white;
+	margin-bottom: em(8px);
+}
+.feedback__row-ava {
+	float: left;
+	margin-right: em(14px); 
+
+}
+.feedback__row-name {
+	float: left;
+	padding-top: em(16px);
+}
+

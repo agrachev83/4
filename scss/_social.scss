@@ -1,0 +1,45 @@
+.s-media {
+	width: 100%;
+	background: #ffffff;
+	box-shadow: 0 2px 2px 0 #cccccc;
+	&__container {
+		width: to-percent(1100px, 1400px);
+		display: table;
+		margin: 0 auto;
+		padding: em(24px) 0;	
+	}
+	&__text {
+		width: to-percent(365px);
+	display: table-cell;
+	vertical-align: middle;
+	//padding-right: em(90px);
+	@include respond-to(max-width, 1000px) {
+		padding-right: em(100px);
+	}
+	@include respond-to(max-width, 900px) {
+		display: block;
+		width: 100%;
+		margin-bottom: em(45px);
+		}
+	}
+	&__navbar {
+	width: to-percent(650px);
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: em(85px);
+		@include respond-to(max-width, 900px) {
+			display: block;
+			width: 100%;
+			margin-bottom: em(45px);
+		}
+	}
+}
+
+
+.social-row {
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+
+

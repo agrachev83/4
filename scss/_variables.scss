@@ -1,14 +1,32 @@
 $color--dark-black: #000000;
 $color--dark-grey: #333333;
 $color--white: #f5f5f5;
-
+$color--orange: #ff9b51;
+$color--font-white: #ffffff;
+$color--font-gray: #cccccc;
+$color--font-dark: #000000;
+$color--font-orange: $color--orange;
 $size--container: 1100px;
-$size--font-base: 16px;
+$size--font-small: 14px;
+$size--font-regular: 16px;
+$size--font-large: 20px;
+$size--font-x-large: 36px;
+$size--font-xx-large: 64px;
+$font--family-base: opensans-regular;
 
-@function to-percent($size, $container:$size-container) {
-	@return percentage($size/$size-container);
+@function to-percent($size, $container: $size--container) {
+	@return percentage($size/ $container);
 }
 
-@function em($size, $base: $size--font-base) {
+@function em($size, $base: $size--font-small) {
 	@return $size/$base * 1em;
 }
+
+@mixin respond-to ($param, $media) {
+	@media only screen and (#{$param}: $media) { @content; }
+}
+
+
+
+
+

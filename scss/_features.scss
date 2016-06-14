@@ -1,0 +1,66 @@
+.features {
+	margin-top: 2px;
+	width: 100%;
+	background: $color--white;
+		&__container {
+			width: to-percent(1100px, 1400px);
+			margin: 0 auto;
+			padding-top: em(140px);
+			padding-bottom: em(110px);
+		}
+		&__navbar {
+			float: left;
+			width: to-percent(110px);
+			margin-right: em(77px);
+			cursor: pointer;
+		}
+		&__display {
+			float: left;
+			width: to-percent(900px, 1100px);	
+		}			
+}
+.navbar {
+	color: $color--white;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+	background: $color--dark-black;
+	padding: em(50px) 0;
+				&:hover {
+					background: $color--orange;
+				}
+		&__tab-2 {
+			border-radius: 0;
+			margin: 1px 0;
+		}
+		&__tab-3 {
+			border-radius: 0 0 5px 5px;
+		}
+}
+.display__text {
+	float: left;
+	margin-right: em(77px);
+	//margin-right: em(100px);
+	width:  to-percent(570px);
+	&-row {
+		margin-bottom: em(50px);
+			&:last-child {
+				margin-bottom: 0;
+			}
+	}
+
+}
+.display__pic {
+	float: left;
+	//background-image: url("../img/image-right-u255.png");
+	width: 319px;
+	height: 252px;
+	text-align: right;
+} 
+
+	
+
+
+
+			

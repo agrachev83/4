@@ -3,3 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	font-size: $size--font-small;
+	font-family: $font--family-base;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	//border: 1px solid red;
+}

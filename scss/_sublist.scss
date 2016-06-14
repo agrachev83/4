@@ -1,0 +1,44 @@
+.sublist {
+	width: 100%;
+	background: #ffffff;
+		&__container {
+			width: to-percent(1100px, 1400px);
+			//display: table;
+			margin: 0 auto;
+			padding-top: em(110px);
+			padding-bottom: em(135px);
+		}
+		&__picture {
+			width: to-percent(480px);
+			float: left;
+			//display: table-cell;
+			vertical-align: middle;
+			margin-right: 15%;
+		}
+		&__section {
+			width: to-percent(450px);
+			float: left;
+			//display: table-cell;
+			vertical-align: middle;
+			//padding-left: to-percent(190px);
+		}	
+			
+		
+}
+
+
+.image-city {
+	box-shadow: 2px 2px 14px 3px #ccc;
+}
+
+.sublist__section-row	{
+	margin-bottom: em(30px);
+		&:last-child {
+			margin-bottom: 0;
+		}
+}
+.section__icon {
+	float: left;
+	margin-right: 30px;
+}
+

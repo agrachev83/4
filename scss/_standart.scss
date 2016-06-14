@@ -1,0 +1,30 @@
+.standart {
+	width: 100%;
+	background: $color--white;
+		&__container {
+			width: to-percent(1100px, 1400px);
+			margin: 0 auto;
+			padding-top: em(85px);
+			padding-bottom: em(125px);
+		}
+		&__description {
+			width: to-percent(650px);	
+			padding-right: to-percent(170px);
+			float: left;
+			 &-row {
+			 	margin-bottom: 30px;
+			 	 	&:last-child {
+			 	 		margin-bottom: 0;
+			 	 	}
+			 }
+			
+		}
+		&__picture {
+			float: left;
+			width: to-percent(450px);
+			//text-align: right;
+			margin-right: -23px;	
+		}
+}
+
+

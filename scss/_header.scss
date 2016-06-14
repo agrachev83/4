@@ -1,15 +1,47 @@
+
+
 .header {
 	width: 100%;
 	background-color: $color--dark-black;
 	
 	&__container {
-		width: $size--container;
+		width: to-percent(1100px, 1400px);
 		display: table;
 		margin: 0 auto;
-		padding: em(22px);
-	}
+		padding: em(22px) 0;
+			}
 
 	&__logo {
-
+		display: table-cell;
+	
+		vertical-align: middle;
 	}
+
+	&__menu {
+		display: table-cell;
+		text-align: right;
+		vertical-align: middle;
+	}	
+}
+
+.menu {
+	display: block;
+	text-align: right;
+	margin-right: em(-45px);
+	font-size: $size--font-small;
+	list-style: none;
+		&__item {
+			display: inline-block;
+			margin-right: em(45px);
+			cursor: pointer;
+		}
+
+	
+
+.menu__navbar_links {
+	
+	color: $color--font-gray;
+	text-decoration: none;
+	cursor: pointer;
+		}
 }

@@ -1,0 +1,17 @@
+.stylish {
+	width: 100%;
+	background-image: url("../img/image-foot-stylish.jpg");
+	&__container {
+		width: to-percent(1100px, 1400px);
+		margin: 0 auto;
+		text-align: center;
+		padding-top: em(75px);
+		padding-bottom: em(60px);
+	}
+	&__description {
+		margin-bottom: em(30px);
+			&:last-child {
+				margin-bottom: em(60px);
+			}
+	}
+}
