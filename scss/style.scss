@@ -1,6 +1,7 @@
 @import "variables";
 @import "base";
 @import "typography";
+<<<<<<< HEAD
 @import "links";
 @import "btn";
 @import "popup";
@@ -46,3 +47,18 @@ body {
 	width: 100%;
 	@include clearfix;
 } */
+=======
+@import "divider";
+@import "header";
+@import "logo";
+@import "menu";
+@import "buttons";
+@import "signup";
+@import "popup";
+
+
+
+
+
+
+>>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e

@@ -12,6 +12,7 @@
 		height: 3px;
 		background-color: #fff; 
 	}
+<<<<<<< HEAD
 	&_position {
 		&_center {
 			&:after {
@@ -36,3 +37,15 @@
 }
 
 
+=======
+
+	&_position {
+		&_center {
+			&:after {
+    			left: 50%;
+    			margin-left: -32.5px;
+			}
+		}
+	}
+}
+>>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e

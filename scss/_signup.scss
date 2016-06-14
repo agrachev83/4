@@ -19,7 +19,11 @@
 	}
 
 	&__input {
+<<<<<<< HEAD
 		//outline: none;
+=======
+		outline: none;
+>>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e
 		padding: em(10px);
 		border-top: none;
 		border-left: 1px solid #fbfbfb;
@@ -30,7 +34,11 @@
 		width: 100%;
 	}
 
+<<<<<<< HEAD
 	&__start{
+=======
+	&__submit {
+>>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e
 		width: 100%;
 		border: none;
 		display: block;
@@ -40,6 +48,11 @@
 		text-align: center;
 		color: $color--font-white;
 		cursor: pointer;
+<<<<<<< HEAD
 		outline: none;
 	}
 }
+=======
+	}
+}
+>>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e

@@ -2,5 +2,16 @@
 	width: 79px;
 	height: 27px;
 	display: block;
+<<<<<<< HEAD
 	background-image: url('../img/logo.png')
+=======
+	background-image: url('../img/logo.png');
+
+	&_big {
+		width: 175px;
+		height: 60px;
+		display: block;
+		background-image: url('../img/logo_big.png');
+	}
+>>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e
 }
