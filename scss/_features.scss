@@ -17,7 +17,7 @@
 		&__display {
 			float: left;
 			width: to-percent(900px, 1100px);	
-		}			
+		}		
 }
 .navbar {
 	color: $color--white;
@@ -40,8 +40,7 @@
 }
 .display__text {
 	float: left;
-	margin-right: em(77px);
-	//margin-right: em(100px);
+	//margin-right: em(20px);
 	width:  to-percent(570px);
 	&-row {
 		margin-bottom: em(50px);
@@ -53,9 +52,7 @@
 }
 .display__pic {
 	float: left;
-	//background-image: url("../img/image-right-u255.png");
 	width: 319px;
-	height: 252px;
 	text-align: right;
 } 
 

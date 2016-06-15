@@ -2,7 +2,6 @@ $color--dark-black: #000000;
 $color--dark-grey: #333333;
 $color--white: #f5f5f5;
 $color--orange: #ff9b51;
-<<<<<<< HEAD
 $color--font-white: #ffffff;
 $color--font-gray: #cccccc;
 $color--font-dark: #000000;
@@ -17,41 +16,14 @@ $font--family-base: opensans-regular;
 
 @function to-percent($size, $container: $size--container) {
 	@return percentage($size/ $container);
-=======
-
-$color--font-white: #fff;
-$color--font-gray: #86878b;
-$color--font-dark: #212121;
-$color--font-orange: $color--orange;
-
-$size--container: 1100px;
-$size--font-x-large: 36px;
-$size--font-large: 20px;
-$size--font-regular: 16px;
-$size--font-small: 14px;
-$size--font-base: $size--font-small;
-
-
-@function to-percent($size, $container: $size--container) {
-	@return percentage($size / $container);
->>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e
 }
 
 @function em($size, $base: $size--font-small) {
 	@return $size/$base * 1em;
 }
 
-<<<<<<< HEAD
-@mixin respond-to ($param, $media) {
-	@media only screen and (#{$param}: $media) { @content; }
-}
 
-
-
-
-
-=======
 @mixin respond-to($param, $media) {
 	@media only screen and ($param: $media) { @content; }
 }
->>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e
+

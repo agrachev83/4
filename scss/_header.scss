@@ -4,29 +4,12 @@
 	width: 100%;
 	background-color: $color--dark-black;
 
-	&_commercial {
-			background: url(../img/commercial.jpg);
-		}
-	
 	&__container {
 		width: to-percent(1100px, 1400px);
 		display: table;
 		margin: 0 auto;
 		padding: em(22px) 0;
-<<<<<<< HEAD
-			}
-
-	&__logo {
-		display: table-cell;
-	
-		vertical-align: middle;
-=======
-		color: #fff;
-
-		&_commercial {
-			padding: em(110px) 0 em(140px);
 		}
-	}
 
 	&__logo {
 		display: table-cell;
@@ -38,47 +21,6 @@
 		vertical-align: middle;
 	}
 
-	&__commercial {
-		display: table-cell;
-		width: to-percent(700px);
-		padding-right: em(230px);
-		
-		@include respond-to(max-width, 1000px) {
-			padding-right: em(100px);
-		}
-
-		@include respond-to(max-width, 900px) {
-			display: block;
-			width: 100%;
-			margin-bottom: em(45px);
-		}
-
-		&-row {
-			margin-bottom: em(30px);
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
-
-	&__signup {
-		display: table-cell;
-		width: to-percent(400px);
-		vertical-align: bottom;
-		
-		@include respond-to(max-width, 900px) {
-			display: block;
-			width: 100%;
-		}
->>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e
-	}
-
-	&__menu {
-		display: table-cell;
-		text-align: right;
-		vertical-align: middle;
-	}	
-}
 
 .menu {
 	display: block;
@@ -91,13 +33,5 @@
 			margin-right: em(45px);
 			cursor: pointer;
 		}
-
-	
-
-.menu__navbar_links {
-	
-	color: $color--font-gray;
-	text-decoration: none;
-	cursor: pointer;
-		}
 }
+	

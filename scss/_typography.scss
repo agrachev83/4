@@ -1,5 +1,4 @@
 @font-face {
-<<<<<<< HEAD
   font-family: 'OpenSans-semibold';
   src: url('../font/OpenSans-semibold/OpenSans-semibold'); /* IE9 Compat Modes */
   src: url('../font/OpenSans-semibold/OpenSans-semibold-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
@@ -16,26 +15,11 @@
        url('../font/OpenSans-regular/OpenSans-regular.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
-
-
 .text {
+
 	&_xx-large {
 		font-size: em($size--font-xx-large);
 	}
-=======
-    font-family: 'open_sanssemibold';
-    src: url('../font/opensans-semibold/opensans-semibold-webfont.eot');
-    src: url('../font/opensans-semibold/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/opensans-semibold/opensans-semibold-webfont.woff2') format('woff2'),
-         url('../font/opensans-semibold/OpenSans-Semibold.ttf')  format('truetype'),
-         url('../font/opensans-semibold/opensans-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-.text {
->>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e
 	&_x-large {
 		font-size: em($size--font-x-large);
 	}
@@ -64,7 +48,7 @@
 	&_upper {
 		text-transform: uppercase;
 	}
-<<<<<<< HEAD
+
 	&_bold {
 		font-weight: bold;
 	}
@@ -73,9 +57,3 @@
 	}
 }
 
-=======
-	&_light {
-		font-weight: 300;
-	}
-}
->>>>>>> 8fae9c6f76178c1e77e5cdae3de2f762827b948e
