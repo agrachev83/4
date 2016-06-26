@@ -23,6 +23,10 @@
 	background-image: url("../img/social-icons.png");
 	background-repeat: no-repeat;
 	background-position: 15px 0;
+	margin-right: em(23px);
+		&:last-child {
+			margin-right: 0;
+		}
 	&_twitter {
 		background-position: -77px;
 	}
@@ -30,16 +34,16 @@
 		background-position: -180px;
 	}
 	&_pinterest {
-		background-position: -265px;
+		background-position: -273px;
 	}
 	&_insta {
-		background-position: -325px;
+		background-position: -374px;
 	}
 	&_worm {
-		background-position: -400px;
+		background-position: -481px;
 	}
 	&_wifi {
-		background-position: -440px;
+		background-position: -585px;
 	}
 
 }

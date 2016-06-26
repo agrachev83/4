@@ -1,0 +1,129 @@
+.tabs-section {
+	width: 100%;
+	background-color: #f5f5f5;
+
+	&__container {
+		width: to-percent(1100px, 1400px);
+		margin: 0 auto;
+		padding: em(145px) 0 em(115px);
+	}
+}
+
+.tabs-table {
+	width: 100%;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+	&__tabs {
+		width: to-percent(110px, 1100px);
+		float: left;
+		@include respond-to (max-width, 1050px) {
+			display: block;
+			width: 100%;
+			margin-bottom: em(30px);
+		}
+	}
+	&__content {
+		display: none;
+		width: to-percent(990px, 1100px);
+		float: left;
+		@include respond-to (max-width, 1050px) {
+			display: block;
+			width: 100%;
+		}
+		&_active {
+			display: block;
+		}
+	}
+}
+
+.tabs {
+	width: 100%;
+
+	&__item {
+		width: 100%;
+		padding: em(50px) 0;
+		text-align: center;
+		background-color: #333333;
+		margin-bottom: 1px;
+		border-radius: 5px;
+		cursor: pointer;
+		font-family: $font--family-base;
+		font-weight: bold;
+		color: #fff;
+		transition: background-color .5s;
+		@include respond-to (max-width, 1050px) {
+			float: left;
+			width: 30%;
+			margin-right: em(15px);
+			padding: em(16px) 0;
+				&:last-child {
+					margin-right: 0;
+				}
+		}
+
+		&_active {
+			background-color: #ff8b38;
+		}
+
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.tabs-table-content {
+	//display: none;
+	float: left;
+	transition: opacity .5s;
+	 
+	&__info {
+		float: left;
+		width: to-percent(470px);
+		margin-left: em(100px);
+		@include respond-to (max-width, 1050px) {
+			margin-left: 0;
+		}
+
+		@include respond-to (max-width, 940px) {
+			display: block;
+			width: 100%;
+			margin-left: 0;
+			margin-bottom: em(30px);
+		}
+	}
+	&__img {
+		float: right;
+		@include respond-to (max-width, 940px) {
+				display: block;
+				width: 100%;
+				text-align: center;
+		}
+	}
+	
+	&__header {
+		float: left;
+		margin-bottom: em(50px);
+	}
+	&__row {
+		float: left;
+		margin-bottom: em(30px);
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+.tabs-table-content__img {
+	float: right;
+	@include respond-to (max-width, 940px) {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+

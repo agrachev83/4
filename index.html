@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>AXIT</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.0.0.min.js"></script>
 </head>
 <body>
  <!--Header start-->
@@ -80,7 +81,7 @@
 							<span class="text_small text_gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. </span>
 						</div>
 				</div>
-				<div class="s-media__navbar">
+				<div class="s-media__navbar clearfix">
 					<div class="social-icons"></div>
 					<div class="social-icons social-icons_twitter"></div>
 					<div class="social-icons social-icons_google"></div>
@@ -94,62 +95,73 @@
 	</div>
 	</article>
 	<!--Social Media end-->
-	<!--Features start-->
-	<article id="features">
-		<div class="features">
-			<div class="features__container clearfix">
-				<div class="features__navbar text_upper">	
-					<div class="navbar">tab 1</div>
-					<div class="navbar navbar__tab-2">tab 2</div>
-					<div class="navbar navbar__tab-3">tab 3</div>			
+	<!--tabs section start-->
+	<div class="tabs-section">
+		<div class="tabs-section__container">
+			<div class="tabs-table">
+				<div class="tabs-table__tabs clearfix">
+					<div class="tabs" id="tabs">
+						<div class="tabs__item" data-content="first">
+							<span class="text_upper">tab 1</span>
+						</div>
+						<div class="tabs__item" data-content="second">
+							<span class="text_upper">tab 2</span>
+						</div>
+						<div class="tabs__item" data-content="third">
+							<span class="text_upper">tab 3</span>
+						</div>
+					</div>
+				</div>
+				<div class="tabs-table__content clearfix" id="contents">
+					<div class="tabs-table-content tabs-table-content__info"> 
+						
+							<div class="tabs-table-content__header">
+								<h2 class="text_large text_bold text_dak">Tabs with soft transitioning effect.</h2>
+							</div>
+							<div class="tabs-table-content__row">
+								<p class="text_small text_gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+							</div>
+							<div class="tabs-table-content__row">
+								<p class="text_small text_gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. AeneanLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean</p>
+							</div>
+
+					</div>
+						<div class="tabs-table-content tabs-table-content__img">
+							<img src="img/image-right-u255.png">
+						</div>	
 				</div>
 
-				<div class="features__display">
-					<div class="display__text">
-						<div class="display__text-row">
-							<span class="text_large text_bold text_dark"> Tabs with soft transitioning effect.</span>
-						</div>
-						<div class="display__text-row">
-							<span class="text_small text_gray"> Lorem ipsum dolor sitamet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</span>
-						</div>
-						<div class="display__text-row">
-							<span class="text_small text_gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</span>
-						</div>	
-						<div class="display__text-row">
-							<button class="btn btn-orange">Download</button>
-						</div>			
-					</div>
-
-					<div class="display__pic">
-						<img src="../4/img/image-right-u255.png" alt="city picture">
-					</div>
+				<div class="tabs-table__content" id="contents">
+					<div class="tabs-table-content">
+						<img src="http://www.getchip.net/wp-content/uploads/102-Bender_robot_Head.png">
+					</div>	
 				</div>
 			</div>
 		</div>
-	</article>
-	<!--Features end-->
+	</div>
+	<!--tabs section end-->
 	<!--Sub list section start-->
 
 	<article id="sub-list">
 		<div class="sublist">
 			<div class="sublist__container clearfix">
-				<div class="sublist__picture">
+				<div class="sublist-img">
 					<div class="city-picture">
 						<img src="../4/img/image-left-sublist-u260.png" alt="city picture" class="image-city">
 					</div>
 				</div>
-				<div class="sublist__section">
+				<div class="sublist-section">
 					
-						<div class="sublist__section-row divider divider_orange">
+						<div class="sublist-section__row divider divider_orange">
 							<span class="text_large text_bold text_dark">
 							Sub list section</span>
 								
 						</div>
-						<div class="sublist__section-row">
+						<div class="sublist-section__row">
 							<span class="text_small text_gray text_light">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</span>
 						</div>
-						<div class="sublist__section-row">
+						<div class="sublist-section__row clearfix">
 							<div class="section__icon">
 								<img src="../4/img/icon-cloud.png" alt="icon cloud" class="icon-cloud">
 							</div>
@@ -162,7 +174,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="sublist__section-row">
+						<div class="sublist__section-row clearfix">
 							<div class="section__icon">
 								<img src="../4/img/icon-cloud.png" alt="icon cloud" class="icon-cloud">
 							</div>
@@ -184,23 +196,23 @@
 	<!--Sub list section end-->
 	<!--Standart picture section start-->
 	<article id="standart-picture-section">
-		<div class="standart">
-			<div class="standart__container clearfix">
-				<div class="standart__description">
-						<div class="standart__description-row divider divider_orange">
+		<div class="standart-section">
+			<div class="standart-section__container clearfix">
+				<div class="standart-section__content">
+						<div class="content-row divider divider_orange">
 							<span class="text_large text_dark text_bold">
 							Standart Picture Section</span>
 						</div>
-						<div class="standart__description-row">
+						<div class="content-row">
 							<span class="text_small text_gray">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</span>
 						</div>
-						<div class="standart__description-row">
+						<div class="content-row">
 							<span class="text_small text_gray">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. </span>
 						</div>
 				</div>
-				<div class="standart__picture">
+				<div class="standart-section__picture">
 					<div class="city-picture">
 						<img src="../4/img/image-right-city-standart.png" alt="city picture" class="image-city">
 					</div>
@@ -213,11 +225,11 @@
 	<article id="awesome-section">
 		<div class="awesome">
 			<div class="awesome__container">
-				<div class="awesome__header">
-					<div class="awesome__header-row divider divider_position_center_orange">
+				<div class="block-header">
+					<div class="block-header__raleway text_raleway divider divider_position_center_orange">
 						<span class="text_x-large text_dark text_upper"> why this is awesome</span>
 					</div>	
-					<div class="awesome__header-row">
+					<div class="block-header__row">
 							<span class="text_small text_gray"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 					</div>
 				</div>
@@ -239,7 +251,7 @@
 						</div>
 					</div>
 
-					<div class="cells cells_350">
+					<div class="cells cells_center">
 						<div class="cells__row">
 							<img src="../4/img/icon-cloud.png" alt="icon cloud">
 						</div>
@@ -278,106 +290,106 @@
 	<article id="pricing-section">
 		<div class="pricing">
 			<div class="pricing__container">
-				<div class="pricing__header">
-					<div class="pricing__header-row divider divider_position_center_orange">
+				<div class="block-header">
+					<div class="block-header__raleway divider divider_position_center_orange">
 						<span class="text_x-large text_dark text_upper"> pricing options</span>
 					</div>	
-					<div class="pricing__header-row">
+					<div class="block-header__row">
 							<span class="text_small text_gray"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 					</div>
 
 				</div>
-				<div class="pricing__options">
-					<div class="price__column">
-						<div class="column__row-gray">
+				<div class="pricing__options clearfix">
+					<div class="price-column">
+						<div class="column-row column-row__top">
 							<span class="text_large text_white text_bold"> Basic </span>
 						</div>
-						<div class="column__row-gray">
+						<div class="column-row column-row__price">
 							<p class="text_white text_bold text_xx-large">$0</p>
-							<p class="price_style text_small text_gray">Free for Life</p>
+							<p class="text_small text_gray text_italic">Free for Life</p>
 						</div>
-						<div class="column__row-orange">
+						<div class="column-row column-row__orange">
 							
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper"> 1 gb of space</span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper"> 1 gb of space</span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">10 gb bandwidth </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">10 gb bandwidth </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">3 websites </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">3 websites </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">basic customization </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">basic customization </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper"> wordpress integration</span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper"> wordpress integration</span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">email support </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">email support </span>
 						</div>
 					</div>
 
-					<div class="price__column price__column-center">
-						<div class="column__row-gray">
+					<div class="price-column price-column__center">
+						<div class="column-row column-row__top">
 							<span class="text_large text_white text_bold"> Proffesional </span>
 						</div>
-						<div class="column__row-gray">
+						<div class="column-row column-row__price">
 							<p class="text_white text_bold text_xx-large">$19</p>
-							<p class="price_style text_small text_gray">Mounthly Payment</p>
+							<p class="text_small text_gray text_italic">Mounthly Payment</p>
 						</div>
-						<div class="column__row-orangebig">
+						<div class="column-row column-row__orangebig">
 							<span class="text_white text_bold text_small text_upper">our most popular</span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper"> 5 gb of space</span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper"> 5 gb of space</span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">50 gb bandwidth </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">50 gb bandwidth </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">12 websites </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">12 websites </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">advanced customization </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">advanced customization </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper"> wordpress integration</span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper"> wordpress integration</span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">email support </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">email support </span>
 						</div>
 					</div>
 
-					<div class="price__column">
-						<div class="column__row-gray">
+					<div class="price-column">
+						<div class="column-row column-row__top">
 							<span class="text_large text_white text_bold"> Enterprise </span>
 						</div>
-						<div class="column__row-gray">
+						<div class="column-row column-row__price">
 							<p class="text_white text_bold text_xx-large">$70</p>
-							<p class="price_style text_small text_gray">Mounthly Payment</p>
+							<p class="text_small text_gray text_italic">Mounthly Payment</p>
 						</div>
-						<div class="column__row-orange">
+						<div class="column-row column-row__orange">
 							
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper"> unlimited space</span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper"> unlimited space</span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">unlimited bandwidth </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">unlimited bandwidth </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">100 websites </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">100 websites </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">advanced customization </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">advanced customization </span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper"> wordpress integration</span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper"> wordpress integration</span>
 						</div>
-						<div class="column__row-white"><a href="#" class="links">
-							<span class="text_small text_gray text_upper">24/7 customer support </span></a>
+						<div class="column-row column-row__white">
+							<span class="text_small text_gray text_upper">24/7 customer support </span>
 						</div>
 					</div>
 				</div>
@@ -389,52 +401,52 @@
 	<article class="customer-section">
 		<div class="customer">
 			<div class="customer__container">
-				<div class="customer__header">
-					<div class="customer__header-row divider divider_position_center_orange">
+				<div class="block-header">
+					<div class="block-header__raleway divider divider_position_center_orange">
 						<span class="text_x-large text_dark text_upper"> what our customers are saying</span>
 					</div>	
-					<div class="customer__header-row">
+					<div class="block-header__row">
 							<span class="text_small text_gray"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 					</div>
 				</div>
 
-				<div class="customer__block-feedback clearfix">
-					<div class="feedback__column">
-						<div class="feedback__row-speach">
+				<div class="customer-feedback clearfix">
+					<div class="feedback-column">
+						<div class="feedback-column-row">
 							<p class="text_small text_gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Doloribus accusamus expedita repellat similique odio asperantur ex, architecto eaque quo suspict.</p>
 						</div>
-						<div class="feedback__row-ava">
+						<div class="feedback-column-row-ava">
 							<img src="../4/img/ava__70x70.png">
 						</div>
-						<div class="feedback__row-name">
+						<div class="feedback-column-row-name">
 							<p class="text_regular text_bold"> Jeremy H.</p>
 							<p class="text_small text_gray">Manager</p>
 						</div>
 					</div>
 
-					<div class="feedback__column">
-						<div class="feedback__row-speach">
+					<div class="feedback-column">
+						<div class="feedback-column-row">
 							<p class="text_small text_gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Doloribus accusamus expedita repellat similique odio asperantur ex, architecto eaque quo suspict.</p>
 						</div>
-						<div class="feedback__row-ava">
+						<div class="feedback-column-row-ava">
 							<img src="../4/img/ava__70x70.png">
 						</div>
-						<div class="feedback__row-name">
+						<div class="feedback-column-row-name">
 							<p class="text_regular text_bold"> John S.</p>
-							<p class="text_small text_gray">Manager</p>
+							<p class="text_small text_gray">Freelancer</p>
 						</div>
 					</div>
 
-					<div class="feedback__column">
-						<div class="feedback__row-speach">
+					<div class="feedback-column">
+						<div class="feedback-column-row">
 							<p class="text_small text_gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Doloribus accusamus expedita repellat similique odio asperantur ex, architecto eaque quo suspict.</p>
 						</div>
-						<div class="feedback__row-ava">
+						<div class="feedback-column-row-ava">
 							<img src="../4/img/ava__70x70.png">
 						</div>
-						<div class="feedback__row-name">
+						<div class="feedback-column-row-name">
 							<p class="text_regular text_bold"> Susan W.</p>
-							<p class="text_small text_gray">Manager</p>
+							<p class="text_small text_gray">Photographer</p>
 						</div>
 					</div>
 				</div>
@@ -445,14 +457,15 @@
 	<!--stylish section start-->
 	<article class="stylish-section">
 		<div class="stylish">
-							<div class="stylish__container">
-					<div class="stylish__description divider divider_position_center">
+			<div class="stylish__container">
+				<div class="block-header">
+					<div class="block-header__raleway divider divider_position_center">
 						<span class="text_x-large text_white text_upper text_light">stylish axure design</span>
 					</div>
-					<div class="stylish__description">
+					<div class="block-header__row">
 							<span class="text_regular text_gray">Use the sections you need, remove the ones you don't.  Create gorgerous prototypes faster then ever!</span>
 					</div>
-						
+				</div>		
 					<button class="btn">Download</button>
 						
 				</div>	
@@ -463,25 +476,28 @@
 	<article id="contact-section">
 		<div class="contact">
 			<div class="contact__container">
-				<div class="contact__header">
-					<div class="contact__header-row divider divider_position_center_orange">
+				<div class="block-header">
+					<div class="block-header__raleway divider divider_position_center_orange">
 						<span class="text_x-large text_dark text_upper text_light">contact us</span>
 					</div>
-					<div class="contact__header-row">
+					<div class="block-header__row">
 						<span class="text_small text_gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
 					</div>
 				</div>
-				<div class="contact__input clearfix">
+				<div class="contact__input clearfix" id="inputFrame">
 					<form class="contact__input-subject">
-							<input type="text" class="signup__input" placeholder="Name">
+							<input type="text" class="signup__input" placeholder="Name" id="name">
 							<input type="text" class="signup__input" placeholder="Email">
 							<input type="text" class="signup__input" placeholder="Subject">
 					</form>
 					<form class="contact__input-message">
-						<textarea name="message" class="message__textarea" rows="10" placeholder="Message"></textarea>
+						<textarea name="message" class="message__textarea" rows="10" placeholder="Message" maxlength="140" id="message"></textarea>
 					</form>
 				</div>
-				<button class="btn btn-orange send-message">Send message</button>
+				<div class="contact-message-send" id="messageSend">
+					<span class="text_large text_dark text_upper">Thanks for your message!</span>
+				</div>
+				<button class="btn btn-orange send-message" id="send">Send message</button>
 			</div>
 		</div>
 	</article>
@@ -490,37 +506,44 @@
 	<article class="footer">
 		<div class="footer">
 			<div class="footer__container">
-				<div class="footer__social_btns">
-					<img src="">
+				<div class="footer__social clearfix">
+					<div class="footer-social-btns"></div>
+					<div class="footer-social-btns footer-social-btns_twitter"></div>
+					<div class="footer-social-btns footer-social-btns_google"></div>
+					<div class="footer-social-btns footer-social-btns_pinterest"></div>
+					<div class="footer-social-btns footer-social-btns_insta"></div>
+					<div class="footer-social-btns footer-social-btns_worm"></div>
+					<div class="footer-social-btns footer-social-btns_wifi"></div>
 				</div>
 				<div class="footer__copyright">
-				<span class="text_gray">&copy; 2015 Axure Themes</span>
+					<span class="text_gray">&copy; 2015 Axure Themes</span>
 				</div>
 			</div>
 		</div>
 
 	</article>
-	<!--footer end-->
-
-	
-	<div class="popup-wrapper" style="display: none;">
-		<div class="popup">
-			<div class="signup">
-						<div class="signup__header">Try your <span class="reg__header_free"> FREE </span> trial today</div>
-							<form>
-								<div class="signup__content">
-									<input class="signup__input" type="text" name="Name" placeholder="Name">
-									<input class="signup__input" type="text" name="email" placeholder="Email">
-									<input class="signup__input" type="password" name="password" placeholder="Password">
-								</div>
-							</form>
-						<button class="signup__start">
-							Get Started</button>
-						
+	<article id="popup">
+		<div class="popup-wrapper">
+			<div class="popup">
+				<div class="popup-block">
+					<div class="popup-block__header">
+						<h2 class="text_large text_dark text_upper">Bender's Popup</h2>
 					</div>
+					<div class="popup-block__row">
+						<img src="img/Bender_Rodriguez.png"/>
+					</div>
+					<button class="popup-block__close">
+						<span class="text_regular text_dark">Закрыть</span>
+					</button>
+				</div>
+
+
 			</div>
 		</div>
-	</div>
-<script type="text/javascript" src="js/main.js"></script>
+	</article>
+	<!--footer end-->
+<!--<script type="text/javascript" src="js/main.js"></script>-->
+<script type="text/javascript" src="js/buttons.js"></script>
+<script type="text/javascript" src="js/tabs.js"></script>
 </body>
 </html>

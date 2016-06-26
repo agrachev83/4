@@ -1,4 +1,4 @@
-.standart {
+.standart-section {
 	width: 100%;
 	background: $color--white;
 		&__container {
@@ -7,24 +7,27 @@
 			padding-top: em(85px);
 			padding-bottom: em(125px);
 		}
-		&__description {
+		&__content {
 			width: to-percent(650px);	
-			padding-right: to-percent(170px);
-			float: left;
-			 &-row {
-			 	margin-bottom: 30px;
-			 	 	&:last-child {
-			 	 		margin-bottom: 0;
-			 	 	}
-			 }
-			
-		}
+			padding-right: em(170px);
+			float: left; 
+
+			@include respond-to(max-width, 1100px) {
+					 width: 100%;
+					 display: block; 
+					 margin-bottom: em(30px);
+					}	
+			}
 		&__picture {
 			float: left;
 			width: to-percent(450px);
-			//text-align: right;
-			margin-right: -23px;	
 		}
+}
+.content-row {
+	margin-bottom: 30px;
+		&:last-child {
+		margin-bottom: 0;
+	 	}
 }
 
 

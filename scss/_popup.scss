@@ -1,20 +1,47 @@
 .popup {
+	overflow: auto;
 	position: absolute;
-	width: 70%;
 	left: 50%;
-	margin-left: -35%;
-	top: 150px;
+	margin-left: -147px;
+	top: 20px;
+		&-block {
+			width: 100%;
+			background-color: $color--font-gray;
+			border-radius: 5px;
+			text-align: center;
+
+			&__header {
+				border-radius: 5px 5px 0 0;
+				padding: 15px 0;
+			}
+			&__row {
+				background-color: #fff;
+				padding: em(15px);
+			}
+			&__close {
+				width: 100%;
+				padding: em(10px);
+				border-radius: 0 0 5px 5px;
+				cursor: pointer;
+				outline: none;
+				border: none;
+			}
+		}
 
 }
 
 .popup-wrapper {
+	display: none;
 	position: fixed;
-	background: rgba(0, 0, 0, .3);
+	background: rgba(0, 0, 0, .6);
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-
-	overflow: scroll;
+	overflow: hidden;
+	
+	&_active {
+		display: block;
+	}
 }
 

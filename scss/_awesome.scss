@@ -7,35 +7,31 @@
 			padding-top: em(105px);
 			padding-bottom: em(100px);
 		}
-		&__header {
-			display: block;
-			text-align: center;
-			 &-row {
-			 	margin-bottom: em(30px);
-			 		&:last-child {
-			 			margin-bottom: em(80px);
-			 		}	
-			 }
-		}
 		&__cells {
-			
+			text-align: center;
 		}
 
 
 }
 
 .cells {
-	text-align: center;
 	float: left;
 	width: to-percent(340px);
 	//border: 1px solid red;
 	margin-right: em(30px);
-		&_350 {
+		&_center {
 		width: to-percent(350px);
 		}
 			&:last-child {
 				margin-right: 0;
 			}
+
+		@include respond-to(max-width, 1200px) {
+				 display: block;
+				 width: 100%;
+				 margin-bottom: em(30px);
+		}
+
 	&__row {
 		margin-bottom: em(30px);
 		&:last-child {

@@ -3,24 +3,30 @@
 	background: #ffffff;
 		&__container {
 			width: to-percent(1100px, 1400px);
-			//display: table;
 			margin: 0 auto;
 			padding-top: em(110px);
 			padding-bottom: em(135px);
 		}
-		&__picture {
-			width: to-percent(480px);
+		&-img {
+			width: to-percent(454px);
 			float: left;
-			//display: table-cell;
-			vertical-align: middle;
-			margin-right: 15%;
+			margin-right: to-percent(190px);
+
+			@include respond-to(max-width, 900px) {
+					 display: block;
+					 width: 100%;
+					 margin-bottom: em(30px);
+			}
 		}
-		&__section {
+		&-section {
 			width: to-percent(450px);
 			float: left;
-			//display: table-cell;
-			vertical-align: middle;
-			//padding-left: to-percent(190px);
+			
+			@include respond-to(max-width, 1030px) {
+					 width: 100%;
+					 display: block; 
+					 margin-bottom: em(45px);
+			}
 		}	
 			
 		
@@ -31,7 +37,7 @@
 	box-shadow: 2px 2px 14px 3px #ccc;
 }
 
-.sublist__section-row	{
+.sublist-section__row	{
 	margin-bottom: em(30px);
 		&:last-child {
 			margin-bottom: 0;
@@ -39,6 +45,12 @@
 }
 .section__icon {
 	float: left;
-	margin-right: 30px;
+	margin-right: em(30px);
+} 
+.section__text {
+	float: left;
+	width: em(340px);
 }
+
+
 

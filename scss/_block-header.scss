@@ -1,0 +1,12 @@
+.block-header {
+	display: block;
+	width: 100%;
+	text-align: center;
+		&__raleway {
+			font-family: raleway;
+			margin-bottom: em(30px);
+		}
+		&__row {
+			margin-bottom: em(80px);
+		}
+}

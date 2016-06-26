@@ -5,12 +5,13 @@
 @import "btn";
 @import "popup";
 @import "divider";
+@import "block-header";
 @import "header";
 @import "logo";
 @import "signup";
 @import "main";
 @import "social";
-@import "features";
+@import "tabs";
 @import "sublist";
 @import "standart";
 @import "awesome";
@@ -24,26 +25,5 @@
 
 
 
-/*$width: 400px;
 
-@function increment ($size, $inc: 1px) {
-	@return $size + $inc;
-}
-
-@mixin clearfix {
-	&:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-}
-
-body {
-	width: increment(2px);
-}
-
-.header {
-	width: 100%;
-	@include clearfix;
-} */
 
