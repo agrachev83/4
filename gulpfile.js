@@ -3,6 +3,8 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
  
 gulp.task('sass', function () {
   return gulp.src('./scss/style.scss')
@@ -11,6 +13,8 @@ gulp.task('sass', function () {
 			browsers: ['last 5 versions'],
 			cascade: false
 		}))
+    .pipe(cssmin())
+		.pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./css'));
 });
  
