@@ -1,0 +1,5 @@
+.image-city {
+	@include respond-to (max-width, 940px) {
+		width: 100%;
+	}
+}

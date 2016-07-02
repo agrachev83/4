@@ -18,6 +18,12 @@
 		&:last-child {
 			margin-right: 0;
 		}
+	@include respond-to (max-width, 940px) {
+					 width: 100%;
+					 display: block; 
+					 margin-bottom: em(30px);
+					
+					}	
 
 }
 .feedback-column-row {

@@ -31,12 +31,6 @@
 			
 		
 }
-
-
-.image-city {
-	box-shadow: 2px 2px 14px 3px #ccc;
-}
-
 .sublist-section__row	{
 	margin-bottom: em(30px);
 		&:last-child {
@@ -50,6 +44,9 @@
 .section__text {
 	float: left;
 	width: em(340px);
+	@include respond-to (max-width, 940px) {
+		width: 100%;
+	}
 }
 
 

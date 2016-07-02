@@ -12,10 +12,19 @@
 		&-subject {
 			width: to-percent(525px);
 			float: left;
+			@include respond-to (max-width, 940px) {
+					 width: 100%;
+					 display: block; 
+					}	
 		}
 		&-message {
 			width: to-percent(525px);
 			float: right;
+			@include respond-to (max-width, 940px) {
+					 width: 100%;
+					 display: block; 
+					 margin-bottom: em(30px);
+					}	
 		}
 
 	}

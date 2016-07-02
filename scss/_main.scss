@@ -29,7 +29,7 @@
 		@include respond-to(max-width, 1000px) {
 			padding-right: em(100px);
 			}
-		@include respond-to(max-width, 900px) {
+		@include respond-to(max-width, 940px) {
 			display: block;
 			width: 100%;
 			margin-bottom: em(45px);
@@ -43,7 +43,8 @@
 		@include respond-to(max-width, 900px) {
 			display: block;
 			width: 100%;
-			margin-bottom: em(45px);
+			//margin-bottom: em(45px);
+			bottom: 0;
 			}
 		}
 

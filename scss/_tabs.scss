@@ -62,7 +62,16 @@
 				&:last-child {
 					margin-right: 0;
 				}
+		@include respond-to (max-width, 700px) {
+			float: left;
+			width: 30%;
+			margin-right: 0;
+			padding: em(16px) 0;
+				&:last-child {
+					margin-right: 0;
+				}
 		}
+	}
 
 		&_active {
 			background-color: #ff8b38;
